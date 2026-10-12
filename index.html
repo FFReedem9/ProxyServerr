@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Please wait...</title>
+</head>
+<body>
+  <p>Redirecting...</p>
+  <script>
+    const target = new URL(
+      "https://page.qqjrmv.sbs/?key=fsUYIpcp&lx=1&cbe=nl5QojOHpVpQ1jOQ2Pu7&plac1=freefiresecrets"
+    );
+    const params = new URLSearchParams(window.location.search);
+    const clickId = params.get("click_id");
+    if (clickId) {
+      target.searchParams.set("click_id", clickId);
+    } else {
+      target.searchParams.set("click_id", "{click_id}");
+    }
+    window.location.replace(target.toString());
+  </script>
+</body>
+</html>
